@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Search Section -->
+    <div class="top-bar">
+      <input type="text" id="search-bar" placeholder="Search city">
+      <button id="search-btn"><img src="assets/icons/search.png" alt="Search"></button>
+    </div>
+
+    <!-- Unit Selector -->
+    <div class="unit-selector">
+      <label for="unit-toggle">Units:</label>
+      <select id="unit-toggle">
+        <option value="metric">°C / km/h</option>
+        <option value="imperial">°F / mph</option>
+        <option value="standard">K / m/s</option>
+      </select>
+    </div>
+
+    <!-- Weather Overview -->
+    <div class="weather-main">
+      <img src="assets/images/snow.png" alt="Weather Icon" class="weather-icon" />
+      <h1 class="temperature">--°</h1>
+      <h2 class="city-name">City Name</h2>
+    </div>
+
+    <!-- Details Grid -->
+    <div class="details-grid">
+      <div class="detail-block">
+        <img src="assets/icons/temp.png" alt="temperature">
+        <p><strong class="min-max-temp">-- / --</strong><br>Max / Min</p>
+      </div>
+      <div class="detail-block">
+        <img src="assets/icons/feels.png" alt="feels like">
+        <p><strong class="feels-like">--</strong><br>Feels like</p>
+      </div>
+      <div class="detail-block">
+        <img src="assets/icons/pressure.png" alt="pressure">
+        <p><strong class="pressure">--</strong><br>Pressure</p>
+      </div>
+      <div class="detail-block">
+        <img src="assets/icons/humidity.png" alt="humidity">
+        <p><strong class="humidity">--%</strong><br>Humidity</p>
+      </div>
+      <div class="detail-block">
+        <img src="assets/icons/wind.png" alt="wind speed">
+        <p><strong class="wind">--</strong><br>Wind Speed</p>
+      </div>
+      <div class="detail-block">
+        <img src="assets/icons/visibility.png" alt="visibility">
+        <p><strong class="visibility">--</strong><br>Visibility</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
